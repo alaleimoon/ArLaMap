@@ -1,0 +1,22 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    PLACE
+{% endblock %}
+
+{% block main %}
+        {% if global_message %}
+            <p>{{ global_message }}</p>
+        {% endif %}
+
+        <h1>{{ place_ifm["name"] }}</h1>
+        <br>
+        <p>Address: {{ place_ifm["address"] }}</p>
+        <br>
+        <p>{{ place_ifm["description"] }}</p>
+        <br>
+
+        {% for filename in filenames %}
+            <img src="/static/img/{{ filename["filename"] }}" alt="" style="height:500px; width:auto;">
+        {% endfor %}
+{% endblock %}

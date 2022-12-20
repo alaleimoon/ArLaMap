@@ -1,0 +1,35 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    PLACES
+{% endblock %}
+
+{% block main %}
+        {% if global_message %}
+            <p>{{ global_message }}</p>
+        {% endif %}
+
+        <h1>Places</h1>
+
+        {% for place in places %}
+            <form action="/place" method="post">
+                <input type="submit" value="{{ place["id"] }}) {{ place["name"] }}" class="placelist">
+                <input name="place_id" type="hidden" value="{{ place["id"] }}">
+            </form>
+
+        {% endfor %}
+
+
+
+    <script>
+      $(".gallery").magnificPopup({
+        delegate: 'a',
+        type: 'image',
+        gallery:{
+          enabled: true
+        }
+      });
+    </script>
+
+
+{% endblock %}

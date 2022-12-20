@@ -1,0 +1,16 @@
+            {% for image in images %}
+                <a href="/static/img/{{ image["filename"] }}" class="image" rel="lightbox" title="{{ image["filename"] }}">
+                    <img src="/static/img/{{ image["filename"] }}" alt="">
+                </a>
+            {% endfor %}
+
+
+
+            {% for image in images %}
+                <div class="image" rel="lightbox" title="{{ image["filename"] }}">
+                    <form action="/place" method="post">
+                        <input type="hidden" name="place" value="{{ image["filename"] }}">
+                        <input type="image" src="/static/img/{{ image["filename"] }}" alt="" style="height:300px; width:auto;">
+                    </form>
+                </div>
+            {% endfor %}

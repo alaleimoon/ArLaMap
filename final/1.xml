@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GeocodeResponse>
+ <status>OK</status>
+ <result>
+  <type>establishment</type>
+  <type>place_of_worship</type>
+  <type>point_of_interest</type>
+  <type>tourist_attraction</type>
+  <formatted_address>116 Nishinoyama Sakuranobabachō, Yamashina Ward, Kyoto, 607-8308, Japan</formatted_address>
+  <address_component>
+   <long_name>116</long_name>
+   <short_name>116</short_name>
+   <type>premise</type>
+  </address_component>
+  <address_component>
+   <long_name>Nishinoyama Sakuranobabachō</long_name>
+   <short_name>Nishinoyama Sakuranobabachō</short_name>
+   <type>political</type>
+   <type>sublocality</type>
+   <type>sublocality_level_2</type>
+  </address_component>
+  <address_component>
+   <long_name>Yamashina Ward</long_name>
+   <short_name>Yamashina Ward</short_name>
+   <type>political</type>
+   <type>sublocality</type>
+   <type>sublocality_level_1</type>
+  </address_component>
+  <address_component>
+   <long_name>Kyoto</long_name>
+   <short_name>Kyoto</short_name>
+   <type>locality</type>
+   <type>political</type>
+  </address_component>
+  <address_component>
+   <long_name>Kyoto</long_name>
+   <short_name>Kyoto</short_name>
+   <type>administrative_area_level_1</type>
+   <type>political</type>
+  </address_component>
+  <address_component>
+   <long_name>Japan</long_name>
+   <short_name>JP</short_name>
+   <type>country</type>
+   <type>political</type>
+  </address_component>
+  <address_component>
+   <long_name>607-8308</long_name>
+   <short_name>607-8308</short_name>
+   <type>postal_code</type>
+  </address_component>
+  <geometry>
+   <location>
+    <lat>34.9700764</lat>
+    <lng>135.7956922</lng>
+   </location>
+   <location_type>ROOFTOP</location_type>
+   <viewport>
+    <southwest>
+     <lat>34.9687274</lat>
+     <lng>135.7943432</lng>
+    </southwest>
+    <northeast>
+     <lat>34.9714254</lat>
+     <lng>135.7970412</lng>
+    </northeast>
+   </viewport>
+  </geometry>
+  <place_id>ChIJYbLvS_sOAWARCQ6MijIdKb8</place_id>
+  <plus_code>
+   <global_code>8Q6QXQCW+27</global_code>
+   <compound_code>XQCW+27 Kyoto, Japan</compound_code>
+  </plus_code>
+ </result>
+</GeocodeResponse>

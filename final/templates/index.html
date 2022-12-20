@@ -1,0 +1,43 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    GALLERY
+{% endblock %}
+
+{% block main %}
+        {% if global_message %}
+            <p>{{ global_message }}</p>
+        {% endif %}
+
+<!-- Gallery source: https://www.darkcode.info/2019/03/responsive-gallery-section-using-html.html -->
+
+    <div class="gallery-section">
+      <div class="inner-width">
+        <div class="gallery">
+
+            {% for image in images %}
+                <div class="image" style="line-height:0; width:300px; height:300px;">
+                    <form action="/place" method="post">
+                        <input name="filename" type="hidden" value="{{ image["filename"] }}">
+                        <input type="image" src="/static/img/{{ image["filename"] }}" alt="" class="archimg">
+                    </form>
+                </div>
+            {% endfor %}
+
+            </div>
+        </div>
+    </div>
+
+
+    <script>
+      $(".gallery").magnificPopup({
+        delegate: 'a',
+        type: 'image',
+        gallery:{
+          enabled: true
+        }
+      });
+    </script>
+
+
+{% endblock %}

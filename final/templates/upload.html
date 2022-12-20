@@ -1,0 +1,15 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Upload
+{% endblock %}
+
+{% block main %}
+    <form action="/upload" method="POST" enctype=multipart/form-data>
+        <input type="text" name="place_name" placeholder="place name"><br><br>
+        <input type="text" name="address" placeholder="Address"><br><br>
+        <input type="text" name="description" placeholder="Description"><br><br>
+        <input type="file" name="file"><br><br>
+        <input type="submit" value="Upload">
+    </form>
+{% endblock %}
